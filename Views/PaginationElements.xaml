@@ -18,7 +18,7 @@
         <Button Content="Previous" Command="{Binding PreviousCommand}"/>
         <TextBlock Width="auto" Text="{Binding CurrentPage}"/>
         <TextBlock Text="of"/>
-        <TextBlock Width="auto" Text="{Binding TotalPage}"/>
+        <TextBlock Width="auto" Text="{Binding TotalPages}"/>
         <Button Content="Next" Command="{Binding NextCommand}"/>
         <Button Content="Last" Command="{Binding LastCommand}"/>
     </StackPanel>

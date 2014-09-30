@@ -21,28 +21,40 @@ namespace MVVMListViewPagination.ViewModels
         #endregion
 
         #region Fields And Properties
-        int itemPerPage = 15;
-        int itemcount;
+        private int itemPerPage = 15;
+        private int itemcount;
         private int _currentPageIndex;
         public int CurrentPageIndex
         {
             get { return _currentPageIndex; }
-            set { _currentPageIndex = value; OnPropertyChanged("CurrentPage"); }
+            set 
+            { 
+                _currentPageIndex = value; 
+                OnPropertyChanged("CurrentPage"); 
+            }
         }
         public int CurrentPage
         {
             get { return _currentPageIndex + 1; }
         }
 
-        private int _totalPage;
-        public int TotalPage
+        private int _totalPages;
+        public int TotalPages
         {
-            get { return _totalPage; }
-            set { _totalPage = value; OnPropertyChanged("TotalPage"); }
+            get { return _totalPages; }
+            private set 
+            { 
+                _totalPages = value; 
+                OnPropertyChanged("TotalPage"); 
+            }
         }
 
         public CollectionViewSource ViewList { get; set; }
-        public ObservableCollection<Person> peopleList = new ObservableCollection<Person>();
+        private ObservableCollection<Person> peopleList = new ObservableCollection<Person>();
+        public ReadOnlyObservableCollection<Person> PeopleList
+        {
+            get { return new ReadOnlyObservableCollection<Person>(peopleList); }
+        }
         #endregion
 
         #region Pagination Methods
@@ -66,7 +78,7 @@ namespace MVVMListViewPagination.ViewModels
 
         public void ShowLastPage()
         {
-            CurrentPageIndex = TotalPage - 1;
+            CurrentPageIndex = TotalPages - 1;
             ViewList.View.Refresh();
         }
 
@@ -85,10 +97,13 @@ namespace MVVMListViewPagination.ViewModels
 
         private void CalculateTotalPages()
         {
-            TotalPage = (itemcount / itemPerPage);
-            if (itemcount % itemPerPage != 0)
+            if (itemcount % itemPerPage == 0)
             {
-                TotalPage += 1;
+                TotalPages = (itemcount / itemPerPage);
+            }
+            else
+            {
+                TotalPages = (itemcount / itemPerPage) + 1;
             }
         }
         #endregion
@@ -98,7 +113,7 @@ namespace MVVMListViewPagination.ViewModels
             populateList();
 
             ViewList = new CollectionViewSource();
-            ViewList.Source = peopleList;
+            ViewList.Source = PeopleList;
             ViewList.Filter += new FilterEventHandler(view_Filter);
 
             CurrentPageIndex = 0;

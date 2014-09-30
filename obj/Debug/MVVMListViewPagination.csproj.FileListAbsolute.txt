@@ -1,0 +1,17 @@
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\bin\Debug\MVVMListViewPagination.exe.config
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\bin\Debug\MVVMListViewPagination.exe
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\bin\Debug\MVVMListViewPagination.pdb
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination.csprojResolveAssemblyReference.cache
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\Views\PaginationElements.baml
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\Views\MainWindow.g.cs
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\Views\PaginationElements.g.cs
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\App.g.cs
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination_MarkupCompile.cache
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination_MarkupCompile.lref
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\Views\MainWindow.baml
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination.g.resources
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination.Properties.Resources.resources
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination.csproj.GenerateResource.Cache
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination.exe
+C:\Users\Dess\Documents\Visual Studio 2013\Projects\StolowkaMenu\MVVMListViewPagination\obj\Debug\MVVMListViewPagination.pdb

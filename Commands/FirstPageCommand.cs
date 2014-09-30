@@ -18,10 +18,7 @@ namespace MVVMListViewPagination.Commands
 
         public bool CanExecute(object parameter)
         {
-            if (viewModel.CurrentPageIndex == 0)
-                return false;
-            else
-                return true;
+            return viewModel.CurrentPageIndex != 0;
         }
 
         public event EventHandler CanExecuteChanged
